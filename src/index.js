@@ -49,14 +49,20 @@ const pizzaData = [
 function App() {
   return (
     <div>
-      <h1>Hello React!</h1>
+      <h1>Hello React! 👍</h1>
       <Pizza />
     </div>
   );
 }
 
 function Pizza() {
-  return <h2>Pizza</h2>;
+  return (
+    <>
+      <img src="pizzas/prosciutto.jpg" alt="Pizza prosciutto" />
+      <h2>Pizza Prosciutto</h2>
+      <p>Tomato, mozarella, ham, aragula, and burrata cheese</p>
+    </>
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
