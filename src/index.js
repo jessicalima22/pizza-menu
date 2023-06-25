@@ -50,7 +50,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Pizza />
+      <Menu />
       <Footer />
     </div>
   );
@@ -59,7 +59,13 @@ function Header() {
   return <h1>Fast React Pizza Co.</h1>;
 }
 
-function Menu() {}
+function Menu() {
+  return (
+    <>
+      <Pizza />
+    </>
+  );
+}
 
 function Footer() {
   return (
