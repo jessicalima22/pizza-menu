@@ -47,6 +47,13 @@ const pizzaData = [
 ];
 
 function App() {
+  const hourNow = new Date().getHours();
+
+  const checkHour =
+    (hourNow >= 18 && hourNow <= 23) || (hourNow >= 0 && hourNow <= 2)
+      ? alert("Welcome! We're open! 😀🍕")
+      : alert(`Sorry, we're closed... 😌 ${hourNow}`);
+
   return (
     <div>
       <Header />
