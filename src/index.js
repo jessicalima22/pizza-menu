@@ -50,13 +50,13 @@ const pizzaData = [
 function App() {
   const hourNow = new Date().getHours();
 
-  const checkHour =
-    (hourNow >= 18 && hourNow <= 23) || (hourNow >= 0 && hourNow <= 2)
-      ? alert("Welcome! We're open! 😀🍕")
-      : alert(`Sorry, we're closed... 😌 ${hourNow}`);
+  // const checkHour =
+  //   (hourNow >= 18 && hourNow <= 23) || (hourNow >= 0 && hourNow <= 2)
+  //     ? alert("Welcome! We're open! 😀🍕")
+  //     : alert(`Sorry, we're closed... 😌 ${hourNow}`);
 
   return (
-    <div>
+    <div className="container">
       <Header />
       <Menu />
       <Footer />
@@ -64,21 +64,28 @@ function App() {
   );
 }
 function Header() {
-  return <h1>Fast React Pizza Co.</h1>;
+  return (
+    <header className="header">
+      <h1 className="header">Fast React Pizza Co.</h1>
+    </header>
+  );
 }
 
 function Menu() {
   return (
-    <>
-      <h1>Our Menu</h1>
+    <main className="menu">
+      <h2>Our Menu</h2>
       <Pizza />
-    </>
+    </main>
   );
 }
 
 function Footer() {
   return (
-    <footer> {new Date().toLocaleTimeString()}, we're currently open </footer>
+    <footer className="footer">
+      {" "}
+      {new Date().toLocaleTimeString()}, we're currently open{" "}
+    </footer>
   );
 }
 
@@ -86,7 +93,7 @@ function Pizza() {
   return (
     <>
       <img src="pizzas/prosciutto.jpg" alt="Pizza prosciutto" />
-      <h2>Pizza Prosciutto</h2>
+      <h1>Pizza Prosciutto</h1>
       <p>Tomato, mozarella, ham, aragula, and burrata cheese</p>
     </>
   );
