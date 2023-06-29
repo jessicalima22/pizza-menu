@@ -91,11 +91,11 @@ function Footer() {
 
 function Pizza() {
   return (
-    <>
+    <div>
       <img src="pizzas/prosciutto.jpg" alt="Pizza prosciutto" />
       <h1>Pizza Prosciutto</h1>
       <p>Tomato, mozarella, ham, aragula, and burrata cheese</p>
-    </>
+    </div>
   );
 }
 
