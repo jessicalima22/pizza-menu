@@ -88,6 +88,8 @@ function Menu() {
         price={12}
         photoName="pizzas/funghi.jpg"
       />
+
+      <Order />
     </main>
   );
 }
@@ -111,6 +113,10 @@ function Footer() {
       {new Date().toLocaleTimeString()}, we're currently open{" "}
     </footer>
   );
+}
+
+function Order() {
+  return <div className="footer"> {`Oizinho laryani`}</div>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
