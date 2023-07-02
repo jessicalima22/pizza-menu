@@ -116,7 +116,7 @@ function Footer() {
 }
 
 function Order() {
-  return <div className="footer"> {`Oizinho laryani`}</div>;
+  return <div className="footer"> {`conditional render`}</div>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
